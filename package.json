@@ -1,0 +1,31 @@
+{
+  "name": "advanced-web3-dapp",
+  "version": "1.0.0",
+  "description": "Multi-wallet Web3 DApp with vanilla JS and React RainbowKit frontends.",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:localhost": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "vanilla:dev": "vite vanilla --host 0.0.0.0 --port 5174",
+    "react:install": "npm install --prefix react-app",
+    "react:dev": "npm run dev --prefix react-app",
+    "react:build": "npm run build --prefix react-app"
+  },
+  "keywords": ["web3", "hardhat", "ethers", "wagmi", "rainbowkit"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.7",
+    "@types/node": "^25.6.0",
+    "hardhat": "^3.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
+  }
+}

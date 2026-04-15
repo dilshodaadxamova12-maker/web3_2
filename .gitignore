@@ -1,0 +1,8 @@
+node_modules/
+react-app/node_modules/
+dist/
+react-app/dist/
+artifacts/
+cache/
+.env
+*.log
